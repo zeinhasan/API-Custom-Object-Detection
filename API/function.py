@@ -7,7 +7,7 @@ import json
 
 # Get the model from the bucket
 storage = storage.Client() # Initialize the client
-bucket = storage.bucket('object-detection-image') # Get the bucket
+bucket = storage.bucket('fruit-freshness-object-detection-agrovision') # Get the bucket
 blob = bucket.blob('Apple-YoloV8L.pt') # Get the model
 blob.download_to_filename('Apple-YoloV8L.pt') # Download the model
 model = YOLO('Apple-YoloV8L.pt') # Load the model
